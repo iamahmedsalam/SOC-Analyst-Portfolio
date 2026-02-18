@@ -30,9 +30,9 @@ This repository documents my journey from an unemployed beginner in IT and cyber
 
 Feedback and suggestions welcome — let's connect!
 
-## Connect with Me b
+## Connect with Me :
 
-- **LinkedIn**: [Ahmed Salam](https://www.linkedin.com/in/ahmedsalamnyc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUVR65LccRkyH0oZy95K4%2Bw%3D%3D – For professional networking and cybersecurity discussions.
+- **LinkedIn**: [Ahmed Salam](https://linkedin.com/in/ahmedsalamnyc) – For professional networking and cybersecurity discussions.
 - **X (Twitter)**: [@imahmedsalam](https://x.com/imahmedsalam) – Follow for real-time updates on my SOC journey and tips.
 - **GitHub**: [imahmedsalam](https://github.com/imahmedsalam) – Star or fork this repo for more projects.
 - **Personal Website** (coming soon): [ahmedsalam.com](https://ahmedsalam.com) – Detailed write-ups and portfolio expansions.
