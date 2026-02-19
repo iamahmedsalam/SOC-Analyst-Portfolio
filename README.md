@@ -8,7 +8,7 @@ This repository documents my journey from an unemployed beginner in IT and cyber
 
 ## Phase 1-3: Home SOC Lab with Wazuh
 
-[SOC Lab Architecture](soc-lab-architecture.png)
+![SOC Lab Architecture](soc-lab-architecture.png)
 
 - **Goal**: Built a complete SOC simulation environment from scratch using VirtualBox to monitor threats and generate alerts.
 - **Tech Stack**: Ubuntu Server 24.04 LTS for Wazuh SIEM (all-in-one: manager, indexer, dashboard), Windows 11 Enterprise Evaluation endpoint with Sysmon for enhanced logging, multi-agent enrollment.
