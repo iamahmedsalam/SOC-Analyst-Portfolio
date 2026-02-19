@@ -48,6 +48,6 @@ Core SOC simulations: brute-force detection, phishing analysis, custom rules, in
 - LinkedIn: [Ahmed Salam](https://www.linkedin.com/in/ahmedsalamnyc)  
 - X: [@imahmedsalam](https://x.com/imahmedsalam)  
 - GitHub: [iamahmedsalam](https://github.com/iamahmedsalam)  
-- Website (coming soon): [ahmedsalam.com](https://ahmedsalam.com)
+- Personal site : [iamahmedsalam.com](https://iamahmedsalam.com)
 
 Open to feedback, suggestions, and collaboration!
