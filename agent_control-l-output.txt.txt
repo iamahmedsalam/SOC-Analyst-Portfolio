@@ -1,0 +1,2 @@
+ID: 000, Name: wazuh-server (server), IP: 127.0.0.1, Active/Local
+ID: 001, Name: WIN11-SOC-Endpoint, IP: 192.168.12.25, Active, Last keep alive: Recent

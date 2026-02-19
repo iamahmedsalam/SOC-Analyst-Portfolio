@@ -1,0 +1,13 @@
+# Minimal working config after troubleshooting (HTTP fallback for lab)
+server.host: "0.0.0.0"
+server.port: 5601
+server.ssl.enabled: false
+
+opensearch.hosts: ["https://localhost:9200"]
+opensearch.ssl.verificationMode: none
+opensearch.username: "admin"
+opensearch.password: "L**********3"
+
+uiSettings.overrides.defaultRoute: "/app/wz-home"
+
+# Removed problematic key: opensearch.requestHeadersAllowlist (caused fatal validation error)
