@@ -36,7 +36,7 @@ Deployed a complete monitoring lab from scratch using VirtualBox:
 
 ## Key Configuration Files
 
-All configs and commands used in the lab are in the [`/configs`] folder(configs):
+All configs and commands used in the lab are in the [`/configs`](configs) folder:
 
 - [`opensearch_dashboards.yml`](configs/opensearch_dashboards.yml) — Dashboard config (HTTP fallback after troubleshooting)
 - [`sysmonconfig-export.xml`](configs/sysmonconfig-export.xml) — SwiftOnSecurity Sysmon config for endpoint visibility
