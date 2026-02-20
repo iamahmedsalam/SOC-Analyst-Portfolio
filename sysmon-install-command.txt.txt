@@ -1,1 +1,0 @@
-.\Sysmon64.exe -accepteula -i sysmonconfig-export.xml
