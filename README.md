@@ -38,11 +38,11 @@ Deployed a complete monitoring lab from scratch using VirtualBox:
 
 All configs and commands used in the lab are in the [`/configs`](configs) folder:
 
-- [`/opensearch_dashboards.yml`](configs/opensearch_dashboards.yml) — Dashboard config (HTTP fallback after troubleshooting)
-- [`/sysmonconfig-export.xml`](configs/sysmonconfig-export.xml) — SwiftOnSecurity Sysmon config for endpoint visibility
-- [`/wazuh-agent-install-command.txt`](configs/wazuh-agent-install-command.txt) — Windows agent install command
-- [`/sysmon-install-command.txt`](configs/sysmon-install-command.txt) — Sysmon install command
-- [`/agent_control-l-output.txt`](configs/agent_control-l-output.txt) — Manager-side agent list (showing multi-agent enrollment)
+- [`/opensearch_dashboards.yml`] (/configs/opensearch_dashboards.yml) — Dashboard config (HTTP fallback after troubleshooting)
+- [`/sysmonconfig-export.xml`] (/configs/sysmonconfig-export.xml) — SwiftOnSecurity Sysmon config for endpoint visibility
+- [`/wazuh-agent-install-command.txt`] (/configs/wazuh-agent-install-command.txt) — Windows agent install command
+- [`/sysmon-install-command.txt`] (/configs/sysmon-install-command.txt) — Sysmon install command
+- [`/agent_control-l-output.txt`] (/configs/agent_control-l-output.txt) — Manager-side agent list (showing multi-agent enrollment)
 
 ### Screenshots & Proof
 Screenshots: 📸 Browse all phase screenshots in the [/screenshots folder](screenshots) (organized as phase01,phase02 & phase03)  
