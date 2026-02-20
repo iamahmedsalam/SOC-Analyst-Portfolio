@@ -1,1 +1,0 @@
-msiexec.exe /i C:\wazuh-agent.msi /q WAZUH_MANAGER="192.168.12.126" WAZUH_AGENT_GROUP="default"
