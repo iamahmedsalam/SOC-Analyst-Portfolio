@@ -34,8 +34,17 @@ Deployed a complete monitoring lab from scratch using VirtualBox:
 - Agent connectivity & registration troubleshooting  
 - SSL handshake issues → reliable HTTP fallback  
 
+## Key Configuration Files
+All configs used in the lab are in the `/configs` folder:
+
+- [`opensearch_dashboards.yml`] — Dashboard config (HTTP fallback after troubleshooting)
+- [`sysmonconfig-export.xml`] — SwiftOnSecurity Sysmon config for endpoint visibility
+- [`wazuh-agent-install-command.txt`] — Windows agent install command
+- [`sysmon-install-command.txt`] — Sysmon install command
+- [`agent_control-l-output.txt`] — Manager-side agent list (showing multi-agent enrollment)
+
 ### Screenshots & Proof
-Screenshots: 📸 Browse all phase screenshots in the [/screenshots folder](screenshots) (organized as phase01-01.png, phase02-01.png, etc.)  
+Screenshots: 📸 Browse all phase screenshots in the [/screenshots folder](screenshots) (organized as phase01,phase02 & phase03)  
 Key highlights: VM creation, Wazuh install output, Sysmon events, multi-agent dashboard, agent_control -l
 
 ### Video Walkthrough
