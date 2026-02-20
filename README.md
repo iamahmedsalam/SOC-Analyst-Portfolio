@@ -35,7 +35,7 @@ Deployed a complete monitoring lab from scratch using VirtualBox:
 - SSL handshake issues → reliable HTTP fallback  
 
 ### Screenshots & Proof
-See `/screenshots` folder (organized by phase)  
+Screenshots: 📸 Browse all phase screenshots in the [/screenshots folder](screenshots) (organized as phase01-01.png, phase02-01.png, etc.)  
 Key highlights: VM creation, Wazuh install output, Sysmon events, multi-agent dashboard, agent_control -l
 
 ### Video Walkthrough
