@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Salam – SOC Analyst Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background: #f8f9fa; color: #333; }
-    h1 { color: #2c3e50; margin-bottom: 10px; }
-    p { font-size: 1.2em; max-width: 700px; margin: 20px auto; }
-    .links a { display: inline-block; margin: 15px; font-size: 1.3em; color: #3498db; text-decoration: none; }
-    .links a:hover { color: #e74c3c; }
-    .note { font-size: 0.9em; color: #777; margin-top: 40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Salam – SOC Analyst Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>Ahmed Salam</h1>
-  <p>CompTIA Security+ certified | Building hands-on SOC Analyst skills</p>
-  
-  <div class="links">
-    <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank">GitHub Portfolio</a>
-    <a href="https://x.com/imahmedsalam" target="_blank">X (@imahmedsalam)</a>
-    <a href="https://www.linkedin.com/in/ahmedsalamnyc/" target="_blank">LinkedIn</a>
-  </div>
-  
-  <p class="note">Professional resume available upon request – contact@iamahmedsalam.com (coming soon)</p>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="assets/portrait.jpg" alt="Ahmed Salam" class="portrait">
+            <div class="hero-text">
+                <h1 class="name">Ahmed Salam</h1>
+                <p class="title">AI-Augmented SOC Analyst | CompTIA Security+</p>
+                <p class="bio">
+                    CompTIA Security+ certified beginner building real SOC capabilities through hands-on Wazuh labs, Sysmon endpoint monitoring, and threat simulation projects.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications">
+        <h2>Certifications & Badges</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <img src="assets/security-plus-logo.png" alt="CompTIA Security+" class="cert-logo">
+                <div class="cert-info">
+                    <h3>CompTIA Security+</h3>
+                    <p class="issuer">CompTIA</p>
+                    <p class="date">Issued: February 2026 • Expires: February 2028 
+                        <span class="status">• Active <i class="fas fa-check-circle"></i></span>
+                    </p>
+                    <p class="desc">Core cybersecurity skills in threat detection, incident response, architecture, and operations.</p>
+                    <a href="https://www.credly.com/badges/73326841-6e96-460f-bfad-977ed073d43e" target="_blank" class="credly-btn">Show Credentials →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Home SOC Lab with Wazuh</h3>
+                <p class="project-desc">Built a complete multi-agent SIEM environment from scratch using VirtualBox, Ubuntu Server, and Windows 11 endpoint with Sysmon.</p>
+                <div class="tech-tags">
+                    <span>Wazuh</span>
+                    <span>Sysmon</span>
+                    <span>VirtualBox</span>
+                </div>
+                <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank" class="credly-btn">View on GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h3>CompTIA Security+</h3>
+                <p class="achievement-date">February 2026</p>
+                <p class="achievement-desc">Earned foundational certification in cybersecurity, covering threat detection, incident response, and security architecture.</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">🔬</div>
+                <h3>Multi-Agent Wazuh SOC Lab</h3>
+                <p class="achievement-date">Completed 2026</p>
+                <p class="achievement-desc">Built and operationalized a full home SOC lab with Wazuh SIEM, Sysmon endpoint monitoring, and real-time event correlation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog">
+        <h2>Technical Write-ups</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <h3>Building a Multi-Agent Wazuh SOC Lab from Scratch</h3>
+                <p class="blog-date">February 2026</p>
+                <p class="blog-excerpt">Complete step-by-step journey of deploying Wazuh SIEM, Sysmon on Windows, agent enrollment, and troubleshooting real-world issues.</p>
+                <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank" class="credly-btn">Read on GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT & RESUME REQUEST (Kept exactly as you loved it) -->
+    <section class="connect">
+        <h2>Let's Connect</h2>
+        <div class="connect-content">
+
+            <div class="social-links">
+                <a href="https://x.com/imahmedsalam" target="_blank"><i class="fab fa-x-twitter"></i> X (@imahmedsalam)</a>
+                <a href="https://www.linkedin.com/in/ahmedsalamnyc/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/iamahmedsalam" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://instagram.com/iamahmedsalam" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="mailto:contact@iamahmedsalam.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+
+            <div class="resume-form">
+                <h3>Request My Resume</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Full Name" required>
+                    <input type="email" name="email" placeholder="Your Work Email" required>
+                    <input type="text" name="company" placeholder="Company / Organization" required>
+                    <input type="text" name="title" placeholder="Your Designation / Role" required>
+                    <textarea name="message" placeholder="Short message or reason (optional)"></textarea>
+                    
+                    <p class="disclaimer">
+                        <strong>Privacy Guarantee</strong>: Your information is used only to verify your request. 
+                        It is not stored, sold, shared, or used for any other purpose.
+                    </p>
+                    
+                    <button type="submit">Request Resume</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ahmed Salam. Built with passion for cybersecurity.</p>
+    </footer>
+
 </body>
 </html>
