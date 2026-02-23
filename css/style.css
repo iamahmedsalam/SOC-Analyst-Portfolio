@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #0A2540;
     color: #E2E8F0;
     line-height: 1.7;
@@ -38,7 +38,7 @@ body {
 
 .hero-text .name {
     font-size: 4.4rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #60A5FA;
     letter-spacing: -0.03em;
     margin-bottom: 0.6rem;
@@ -219,7 +219,7 @@ footer {
     }
     
     .name {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
         margin-bottom: 0.8rem;
     }
     
@@ -231,20 +231,4 @@ footer {
         grid-template-columns: 1fr;
         gap: 50px;
     }
-}
-/* Unified Button Style - All buttons now match "Show Credentials" */
-.credly-btn, .project-link, .blog-link {
-    display: inline-block;
-    background: #3B82F6;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.credly-btn:hover, .project-link:hover, .blog-link:hover {
-    background: #2563EB;
 }
