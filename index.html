@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Salam — SOC Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;600;700;800&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <svg class="wolf-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer glow filter -->
+    <filter id="glow-strong" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="6" result="blur2"/>
+      <feMerge><feMergeNode in="blur2"/><feMergeNode in="blur1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ═══ OUTER TRIANGLE — dark fill, glowing cyan border ═══ -->
+  <polygon points="50,4 4,94 96,94"
+    fill="#020C1B"
+    stroke="#00D4FF"
+    stroke-width="1.8"
+    stroke-linejoin="round"
+    filter="url(#glow-strong)"/>
+
+  <!-- Outer triangle inner fill layer (slightly smaller, dark navy) -->
+  <polygon points="50,8 8,92 92,92" fill="#030E20"/>
+
+  <!-- ═══ CIRCUIT DETAIL LINES inside triangle panels ═══ -->
+  <!-- Left panel circuits -->
+  <line x1="22" y1="75" x2="30" y2="62" stroke="#00D4FF" stroke-width="0.4" opacity="0.45"/>
+  <line x1="18" y1="82" x2="26" y2="69" stroke="#00D4FF" stroke-width="0.4" opacity="0.35"/>
+  <line x1="26" y1="68" x2="34" y2="68" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <line x1="22" y1="74" x2="30" y2="74" stroke="#00D4FF" stroke-width="0.3" opacity="0.3"/>
+  <!-- Left circuit dots -->
+  <circle cx="26" cy="68" r="0.8" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="22" cy="75" r="0.6" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="18" cy="82" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- Right panel circuits (mirrored) -->
+  <line x1="78" y1="75" x2="70" y2="62" stroke="#00D4FF" stroke-width="0.4" opacity="0.45"/>
+  <line x1="82" y1="82" x2="74" y2="69" stroke="#00D4FF" stroke-width="0.4" opacity="0.35"/>
+  <line x1="74" y1="68" x2="66" y2="68" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <line x1="78" y1="74" x2="70" y2="74" stroke="#00D4FF" stroke-width="0.3" opacity="0.3"/>
+  <circle cx="74" cy="68" r="0.8" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="78" cy="75" r="0.6" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="82" cy="82" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- Top apex circuit dots -->
+  <line x1="50" y1="12" x2="50" y2="24" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <circle cx="50" cy="12" r="0.8" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="50" cy="18" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- ═══ INNER TRIANGLE — secondary nested outline ═══ -->
+  <polygon points="50,16 14,86 86,86"
+    fill="none"
+    stroke="#3B9EFF"
+    stroke-width="0.9"
+    stroke-linejoin="round"
+    opacity="0.5"/>
+
+  <!-- ═══ "A" CHEVRON ARROW SHAPE ═══ -->
+  <!-- The "A" is a filled chevron: outer A minus inner notch -->
+  <!-- Outer A triangle -->
+  <polygon points="50,22 28,82 72,82"
+    fill="#041424"
+    stroke="none"/>
+  <!-- Inner notch cutout — creates the hollow bottom of the A -->
+  <polygon points="50,56 37,82 63,82"
+    fill="#030E20"
+    stroke="none"/>
+
+  <!-- "A" left leg — glowing stroke -->
+  <line x1="50" y1="22" x2="28" y2="82"
+    stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" right leg -->
+  <line x1="50" y1="22" x2="72" y2="82"
+    stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" bottom-left notch leg (left side of chevron gap) -->
+  <line x1="37" y1="82" x2="50" y2="56"
+    stroke="#00D4FF" stroke-width="2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" bottom-right notch leg -->
+  <line x1="63" y1="82" x2="50" y2="56"
+    stroke="#00D4FF" stroke-width="2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+
+  <!-- "A" shape inner echo (slightly dimmer, offset inward for depth) -->
+  <line x1="50" y1="26" x2="31" y2="80" stroke="#3B9EFF" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <line x1="50" y1="26" x2="69" y2="80" stroke="#3B9EFF" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <line x1="38" y1="80" x2="50" y2="58" stroke="#3B9EFF" stroke-width="0.8" opacity="0.4" stroke-linecap="round"/>
+  <line x1="62" y1="80" x2="50" y2="58" stroke="#3B9EFF" stroke-width="0.8" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- ═══ APEX TIP DOT — bright center point ═══ -->
+  <circle cx="50" cy="22" r="2" fill="#00D4FF" opacity="0.95" filter="url(#glow-soft)"/>
+
+  <!-- ═══ BOTTOM BASE LINE ═══ -->
+  <line x1="28" y1="82" x2="37" y2="82" stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-strong)"/>
+  <line x1="63" y1="82" x2="72" y2="82" stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-strong)"/>
+
+  <!-- ═══ OUTER TRIANGLE re-draw on top for crisp glow edge ═══ -->
+  <polygon points="50,4 4,94 96,94"
+    fill="none"
+    stroke="#00D4FF"
+    stroke-width="1.6"
+    stroke-linejoin="round"
+    filter="url(#glow-strong)"
+    opacity="0.9"/>
+
+  <!-- Thin bright inner line on outer triangle -->
+  <polygon points="50,4 4,94 96,94"
+    fill="none"
+    stroke="#00D4FF"
+    stroke-width="0.5"
+    stroke-linejoin="round"
+    opacity="0.95"/>
+
+</svg>
+        </div>
+        <div class="nav-links">
+            <a href="#certs">Certs</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#blog">Write-ups</a>
+            <a href="#connect" class="nav-cta">Connect</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="scanline"></div>
+        </div>
+        <div class="hero-inner">
+            <!-- MOBILE ONLY: status pill at top -->
+            <div class="hero-left">
+                <div class="status-pill">
+                    <span class="pulse"></span>
+                    Available for SOC Analyst roles
+                </div>
+                <!-- MOBILE ONLY: image appears here, hidden on desktop -->
+                <div class="hero-right hero-right-mobile">
+                    <div class="portrait-frame">
+                        <img src="assets/portrait.jpg" alt="Ahmed Salam" class="portrait">
+                    </div>
+                </div>
+                <h1 class="hero-name">Ahmed<br><span class="name-accent">Salam</span></h1>
+                <p class="hero-role">AI-Augmented SOC Analyst<span class="cursor-blink">_</span></p>
+                <p class="hero-bio">
+                    CompTIA Security+ certified — building real SOC capabilities through hands-on Wazuh labs, Sysmon endpoint monitoring, and threat simulation. TryHackMe Top 5%.
+                </p>
+                <div class="hero-stats">
+                    <div class="thm-stats-header">
+                        <i class="fas fa-skull-crossbones thm-skull"></i>
+                        <span class="thm-stats-label">TryHackMe</span>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="stat-num">79</span>
+                            <span class="stat-label">THM Rooms</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">14</span>
+                            <span class="stat-label">Badges</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">Top 5%</span>
+                            <span class="stat-label">THM Ranking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#connect" class="btn-primary">Request Resume</a>
+                    <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <!-- DESKTOP ONLY: image on right column -->
+            <div class="hero-right hero-right-desktop">
+                <div class="portrait-frame">
+                    <img src="assets/portrait.jpg" alt="Ahmed Salam" class="portrait">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section certs-section" id="certs">
+        <div class="section-inner">
+            <div class="section-label">// 01</div>
+            <h2 class="section-title">Certifications & Badges</h2>
+            <div class="certs-grid">
+                <div class="cert-card card-glow">
+                    <div class="cert-header">
+                        <img src="assets/security-plus-logo.png" alt="CompTIA Security+" class="cert-logo">
+                        <div class="cert-badge active">
+                            <i class="fas fa-check-circle"></i> Active
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>CompTIA Security+</h3>
+                        <p class="cert-issuer">CompTIA</p>
+                        <p class="cert-date">Issued Feb 2025 · Expires Feb 2028</p>
+                        <p class="cert-desc">Core cybersecurity skills in threat detection, incident response, architecture, and security operations.</p>
+                        <a href="https://www.credly.com/badges/73326841-6e96-460f-bfad-977ed073d43e" target="_blank" class="cert-link">
+                            Verify Credential <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card card-glow thm-card">
+                    <div class="cert-header thm-header">
+                        <div class="thm-icon"><i class="fas fa-skull-crossbones"></i></div>
+                        <div class="cert-badge active">
+                            <i class="fas fa-check-circle"></i> Active
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>TryHackMe</h3>
+                        <p class="cert-issuer">TryHackMe</p>
+                        <p class="cert-date">Ongoing · 79 rooms completed</p>
+                        <p class="cert-desc">Hands-on cybersecurity training across 79 rooms, earning 14 badges. Ranked in the global Top 5%.</p>
+                        <a href="https://tryhackme.com/p/iamahmedsalam" target="_blank" class="cert-link">
+                            View Profile <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <div class="section-inner">
+            <div class="section-label">// 02</div>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card card-glow featured">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-server"></i></div>
+                        <span class="project-tag featured-tag">Featured</span>
+                    </div>
+                    <h3>Home SOC Lab with Wazuh</h3>
+                    <p class="project-desc">Built a complete multi-agent SIEM environment from scratch using VirtualBox, Ubuntu Server, and Windows 11 endpoint with Sysmon. Includes real-time event correlation, alert tuning, and threat simulation.</p>
+                    <div class="tech-tags">
+                        <span>Wazuh</span>
+                        <span>Sysmon</span>
+                        <span>VirtualBox</span>
+                        <span>Ubuntu Server</span>
+                        <span>Windows 11</span>
+                    </div>
+                    <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card card-glow upcoming">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-flask"></i></div>
+                        <span class="project-tag upcoming-tag orbit-glow">Coming Soon</span>
+                    </div>
+                    <h3>Upcoming Lab Projects</h3>
+                    <p class="project-desc">Actively building and documenting new SOC labs — from threat hunting workflows to malware analysis sandboxes. Each project will include full technical write-ups.</p>
+                    <div class="tech-tags">
+                        <span>In Progress</span>
+                        <span>Documenting</span>
+                    </div>
+                    <span class="project-link muted">Stay tuned <i class="fas fa-clock"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section achievements-section" id="achievements">
+        <div class="section-inner">
+            <div class="section-label">// 03</div>
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card card-glow">
+                    <div class="achievement-num">01</div>
+                    <div class="achievement-icon">🏆</div>
+                    <h3>CompTIA Security+</h3>
+                    <p class="achievement-date">February 2025</p>
+                    <p class="achievement-desc">Earned foundational certification in cybersecurity, covering threat detection, incident response, and security architecture.</p>
+                </div>
+                <div class="achievement-card card-glow">
+                    <div class="achievement-num">02</div>
+                    <div class="achievement-icon">🔬</div>
+                    <h3>Multi-Agent Wazuh SOC Lab</h3>
+                    <p class="achievement-date">Completed 2026</p>
+                    <p class="achievement-desc">Built and operationalized a full home SOC lab with Wazuh SIEM, Sysmon endpoint monitoring, and real-time event correlation.</p>
+                </div>
+                <div class="achievement-card card-glow">
+                    <div class="achievement-num">03</div>
+                    <div class="achievement-icon">🎯</div>
+                    <h3>TryHackMe Top 5%</h3>
+                    <p class="achievement-date">Ongoing 2025–2026</p>
+                    <p class="achievement-desc">Completed 79 rooms across SOC, threat detection, and red team paths. Earned 14 badges ranking in the global top 5%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / WRITE-UPS -->
+    <section class="section blog-section" id="blog">
+        <div class="section-inner">
+            <div class="section-label">// 04</div>
+            <h2 class="section-title">Technical Write-ups</h2>
+            <div class="blog-grid">
+                <div class="blog-card card-glow">
+                    <div class="blog-meta">
+                        <span class="blog-tag">SIEM</span>
+                        <span class="blog-date">February 2026</span>
+                    </div>
+                    <h3>Building a Multi-Agent Wazuh SOC Lab from Scratch</h3>
+                    <p class="blog-excerpt">Complete step-by-step journey of deploying Wazuh SIEM, Sysmon on Windows, agent enrollment, and troubleshooting real-world issues in a home lab environment.</p>
+                    <a href="https://github.com/iamahmedsalam/SOC-Analyst-Portfolio" target="_blank" class="blog-link">
+                        Read on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="blog-card card-glow upcoming-write">
+                    <div class="blog-meta">
+                        <span class="blog-tag upcoming-t orbit-glow">Upcoming</span>
+                        <span class="blog-date">2026</span>
+                    </div>
+                    <h3>More Write-ups on the Way</h3>
+                    <p class="blog-excerpt">Documenting upcoming lab projects with deep technical detail — threat hunting, detection engineering, malware sandboxing, and more.</p>
+                    <span class="blog-link muted">In progress <span class="cursor-blink">_</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section class="connect" id="connect">
+        <div class="section-inner">
+            <div class="section-label">// 05</div>
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="connect-content">
+
+                <div class="connect-left">
+                    <p class="connect-intro">Open to SOC Analyst roles, collaborations, and conversations about cybersecurity.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/imahmedsalam" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>X (@imahmedsalam)</span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmedsalamnyc/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://github.com/iamahmedsalam" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://tryhackme.com/p/iamahmedsalam" target="_blank">
+                            <i class="fas fa-skull-crossbones"></i>
+                            <span>TryHackMe</span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="https://instagram.com/iamahmedsalam" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#91f2feffe5f0f2e5d1f8f0fcf0f9fcf4f5e2f0fdf0fcbff2fefc">
+                            <i class="fas fa-envelope"></i>
+                            <span><span class="__cf_email__" data-cfemail="12717d7c66737166527b737f737a7f777661737e737f3c717d7f">[email&#160;protected]</span></span>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resume-form">
+                    <h3>Request My Resume</h3>
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Work Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company / Organization" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="title" placeholder="Your Designation / Role" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Short message or reason (optional)" rows="4"></textarea>
+                        </div>
+                        <p class="disclaimer">
+                            <i class="fas fa-lock"></i> <strong>Privacy Guarantee</strong>: Your information is used only to verify your request. It is not stored, sold, shared, or used for any other purpose.
+                        </p>
+                        <button type="submit" class="submit-btn">Request Resume <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-logo">
+                <svg class="wolf-logo wolf-logo-sm" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer glow filter -->
+    <filter id="glow-strong" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="6" result="blur2"/>
+      <feMerge><feMergeNode in="blur2"/><feMergeNode in="blur1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ═══ OUTER TRIANGLE — dark fill, glowing cyan border ═══ -->
+  <polygon points="50,4 4,94 96,94"
+    fill="#020C1B"
+    stroke="#00D4FF"
+    stroke-width="1.8"
+    stroke-linejoin="round"
+    filter="url(#glow-strong)"/>
+
+  <!-- Outer triangle inner fill layer (slightly smaller, dark navy) -->
+  <polygon points="50,8 8,92 92,92" fill="#030E20"/>
+
+  <!-- ═══ CIRCUIT DETAIL LINES inside triangle panels ═══ -->
+  <!-- Left panel circuits -->
+  <line x1="22" y1="75" x2="30" y2="62" stroke="#00D4FF" stroke-width="0.4" opacity="0.45"/>
+  <line x1="18" y1="82" x2="26" y2="69" stroke="#00D4FF" stroke-width="0.4" opacity="0.35"/>
+  <line x1="26" y1="68" x2="34" y2="68" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <line x1="22" y1="74" x2="30" y2="74" stroke="#00D4FF" stroke-width="0.3" opacity="0.3"/>
+  <!-- Left circuit dots -->
+  <circle cx="26" cy="68" r="0.8" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="22" cy="75" r="0.6" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="18" cy="82" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- Right panel circuits (mirrored) -->
+  <line x1="78" y1="75" x2="70" y2="62" stroke="#00D4FF" stroke-width="0.4" opacity="0.45"/>
+  <line x1="82" y1="82" x2="74" y2="69" stroke="#00D4FF" stroke-width="0.4" opacity="0.35"/>
+  <line x1="74" y1="68" x2="66" y2="68" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <line x1="78" y1="74" x2="70" y2="74" stroke="#00D4FF" stroke-width="0.3" opacity="0.3"/>
+  <circle cx="74" cy="68" r="0.8" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="78" cy="75" r="0.6" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="82" cy="82" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- Top apex circuit dots -->
+  <line x1="50" y1="12" x2="50" y2="24" stroke="#00D4FF" stroke-width="0.4" opacity="0.4"/>
+  <circle cx="50" cy="12" r="0.8" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="50" cy="18" r="0.6" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- ═══ INNER TRIANGLE — secondary nested outline ═══ -->
+  <polygon points="50,16 14,86 86,86"
+    fill="none"
+    stroke="#3B9EFF"
+    stroke-width="0.9"
+    stroke-linejoin="round"
+    opacity="0.5"/>
+
+  <!-- ═══ "A" CHEVRON ARROW SHAPE ═══ -->
+  <!-- The "A" is a filled chevron: outer A minus inner notch -->
+  <!-- Outer A triangle -->
+  <polygon points="50,22 28,82 72,82"
+    fill="#041424"
+    stroke="none"/>
+  <!-- Inner notch cutout — creates the hollow bottom of the A -->
+  <polygon points="50,56 37,82 63,82"
+    fill="#030E20"
+    stroke="none"/>
+
+  <!-- "A" left leg — glowing stroke -->
+  <line x1="50" y1="22" x2="28" y2="82"
+    stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" right leg -->
+  <line x1="50" y1="22" x2="72" y2="82"
+    stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" bottom-left notch leg (left side of chevron gap) -->
+  <line x1="37" y1="82" x2="50" y2="56"
+    stroke="#00D4FF" stroke-width="2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+  <!-- "A" bottom-right notch leg -->
+  <line x1="63" y1="82" x2="50" y2="56"
+    stroke="#00D4FF" stroke-width="2" stroke-linecap="round"
+    filter="url(#glow-strong)"/>
+
+  <!-- "A" shape inner echo (slightly dimmer, offset inward for depth) -->
+  <line x1="50" y1="26" x2="31" y2="80" stroke="#3B9EFF" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <line x1="50" y1="26" x2="69" y2="80" stroke="#3B9EFF" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
+  <line x1="38" y1="80" x2="50" y2="58" stroke="#3B9EFF" stroke-width="0.8" opacity="0.4" stroke-linecap="round"/>
+  <line x1="62" y1="80" x2="50" y2="58" stroke="#3B9EFF" stroke-width="0.8" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- ═══ APEX TIP DOT — bright center point ═══ -->
+  <circle cx="50" cy="22" r="2" fill="#00D4FF" opacity="0.95" filter="url(#glow-soft)"/>
+
+  <!-- ═══ BOTTOM BASE LINE ═══ -->
+  <line x1="28" y1="82" x2="37" y2="82" stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-strong)"/>
+  <line x1="63" y1="82" x2="72" y2="82" stroke="#00D4FF" stroke-width="2.2" stroke-linecap="round" filter="url(#glow-strong)"/>
+
+  <!-- ═══ OUTER TRIANGLE re-draw on top for crisp glow edge ═══ -->
+  <polygon points="50,4 4,94 96,94"
+    fill="none"
+    stroke="#00D4FF"
+    stroke-width="1.6"
+    stroke-linejoin="round"
+    filter="url(#glow-strong)"
+    opacity="0.9"/>
+
+  <!-- Thin bright inner line on outer triangle -->
+  <polygon points="50,4 4,94 96,94"
+    fill="none"
+    stroke="#00D4FF"
+    stroke-width="0.5"
+    stroke-linejoin="round"
+    opacity="0.95"/>
+
+</svg>
+            </span>
+            <p>&copy; 2026 Ahmed Salam · Built with passion for cybersecurity.</p>
+            <div class="footer-links">
+                <a href="https://github.com/iamahmedsalam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmedsalamnyc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/imahmedsalam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.cert-card, .project-card, .achievement-card, .blog-card').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Nav scroll effect
+        window.addEventListener('scroll', () => {
+            co
