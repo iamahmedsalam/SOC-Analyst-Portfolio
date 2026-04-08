@@ -53,7 +53,7 @@ The original 2-VM lab that started it all — Wazuh Manager + Windows 11 endpoin
 
 | Certification | Platform | Status |
 |---|---|---|
-| CompTIA Security+ | CompTIA | ✅ Certified |
+| CompTIA Security+ | CompTIA | ✅ Certified (Active) |
 | SOC Level 1 | TryHackMe | ✅ Completed (April 2026) |
 
 ---
